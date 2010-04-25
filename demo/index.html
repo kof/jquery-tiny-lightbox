@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>TinyLightbox</title>
+	<link rel="stylesheet" href="../src/css/jquery.tiny-lightbox.css" type="text/css" media="screen" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+	<script type="text/javascript" src="../src/js/jquery.bgiframe.js"></script>
+	<script type="text/javascript" src="../src/js/jquery.tinyLightbox.js"></script>
+	<script type="text/javascript" src="../src/js/jquery.tinyLightbox.original.js"></script>
+	<script type="text/javascript" src="../src/js/jquery.tinyLightbox.parallel.js"></script>
+	<style>
+		body{
+			height: 2000px;
+		}
+	</style>
+</head>
+<body>
+
+<h2>Tiny Lightbox</h2>
+
+
+<h3>Animation 'original'</h3>
+<div id="original">
+
+    <a href="http://farm4.static.flickr.com/3509/3912427039_a79b87119a.jpg" title="1 tes  tesagas afgadsfg adfhaadf asdfa sdf asdfasdfasdf asd asdfasdf asdfasdfsdaf asfgasf asfgadghwrt ujrtjksdg sdghsdafgh ndf">
+    	<img src="http://farm4.static.flickr.com/3509/3912427039_a79b87119a_s.jpg" />
+    </a>
+    
+    
+    <a href="http://farm3.static.flickr.com/2574/3912427047_07589b4527.jpg" title="2 tes  tesagas afgadsfg adfhaadf asdfa sdf asdfasdfasdf asd asdfasdf asdfasdfsdaf asfgasf asfgadghwrt ujrtjksdg sdghsdafgh ndf" rel ="sounds/yippee.wav"title="tes  tesagas afgadsfg adfhaadf asdfa sdf asdfasdfasdf asd asdfasdf asdfasdfsdaf asfgasf asfgadghwrt ujrtjksdg sdghsdafgh ndf" >
+    	<img src="http://farm3.static.flickr.com/2449/3912423497_be43ba2d32_s.jpg" />
+    </a>
+
+    <a href="http://farm4.static.flickr.com/3457/3913212374_622bf8e441.jpg" title="" >
+    	<img src="http://farm3.static.flickr.com/2644/3913212896_d77fd740c9_s.jpg"/>
+    </a>
+
+</div>
+
+<h3>Animation 'parallel'</h3>
+
+<div id="parallel">
+
+    <a href="http://farm4.static.flickr.com/3509/3912427039_a79b87119a.jpg" title="1 tes  tesagas afgadsfg adfhaadf asdfa sdf asdfasdfasdf asd asdfasdf asdfasdfsdaf asfgasf asfgadghwrt ujrtjksdg sdghsdafgh ndf">
+    	<img src="http://farm4.static.flickr.com/3509/3912427039_a79b87119a_s.jpg" />
+    </a>
+    
+    
+    <a href="http://farm3.static.flickr.com/2574/3912427047_07589b4527.jpg" title="2 tes  tesagas afgadsfg adfhaadf asdfa sdf asdfasdfasdf asd asdfasdf asdfasdfsdaf asfgasf asfgadghwrt ujrtjksdg sdghsdafgh ndf" rel ="sounds/yippee.wav"title="tes  tesagas afgadsfg adfhaadf asdfa sdf asdfasdfasdf asd asdfasdf asdfasdfsdaf asfgasf asfgadghwrt ujrtjksdg sdghsdafgh ndf" >
+    	<img src="http://farm3.static.flickr.com/2449/3912423497_be43ba2d32_s.jpg" />
+    </a>
+
+    <a href="http://farm4.static.flickr.com/3457/3913212374_622bf8e441.jpg" title="" >
+    	<img src="http://farm3.static.flickr.com/2644/3913212896_d77fd740c9_s.jpg"/>
+    </a>
+
+</div>
+
+
+
+<script type="text/javascript">
+	$('#original').tinyLightbox();
+	$('#parallel').tinyLightbox({animation: 'parallel', speed: 400});
+</script>
+
+</body>
+</html>
