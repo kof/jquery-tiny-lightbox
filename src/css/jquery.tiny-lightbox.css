@@ -116,7 +116,7 @@ a#tiny-lightbox-prev span {
 }
 a#tiny-lightbox-next span {
 	right: 0;
-	background: url(img/next.png) no-repeat;
+	background: url(../img/next.png) no-repeat;
 	filter:progid:DXImageTransform.Microsoft#AlphaImageLoader(src='../img/next.png', sizingMethod='crop');
 	_background: none;
 }
