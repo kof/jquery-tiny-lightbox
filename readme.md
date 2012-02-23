@@ -13,7 +13,7 @@
     slideshowSpeed: 5000,
     slideshowAutostart: false,
     // zoom image path
-    pathAttr: 'href',
+    urlAttr: 'href',
     // description attribute
     descrAttr: 'title',
     // animations speed
@@ -33,7 +33,10 @@
     overlayOpacity: 0.7,
     // fix selectboxes for ie6, using bgiframe plugin
     bgiframe: true,
-    easing: 'swing'
+    easing: 'swing',
+    // pass an array with urls and titles if you don't want to use the markup
+    // [{url: '', title: ''}]
+    data: null
 
 ## Markup and needed files
 
