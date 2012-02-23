@@ -1,0 +1,136 @@
+div#tiny-lightbox {
+	position: absolute;
+	z-index: 100000;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+div#tiny-lightbox a {
+	outline: none;
+}
+div#tiny-lightbox-overlay {
+	position: absolute;
+	z-index: 0;
+    left: 0;
+    top: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	display: none;
+	padding-bottom: 40px;
+}
+div#tiny-lightbox-box {
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+	height: 200px;
+	top: 40px;
+	background-color: #fff;
+	border: 10px solid #fff;
+	visibility: hidden;
+}
+div#tiny-lightbox.tiny-lightbox-loading div#tiny-lightbox-box {
+	background: url(../img/loading.gif) no-repeat center #fff;
+}
+
+div#tiny-lightbox.tiny-lightbox-animating div#tiny-lightbox-box a, 
+div#tiny-lightbox.tiny-lightbox-loading div#tiny-lightbox-box a {
+	display: none;
+}
+div#tiny-lightbox-image {
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #fff;
+	display: none;
+}
+div#tiny-lightbox-bar {
+	position: absolute;
+	display: none;
+	background: #fff;
+	padding: 0 10px 10px 10px;
+	font-family: Arial, Verdana;
+	font-size: 11px;
+	line-height: 16px;
+    text-align: left;
+	color: #666;	
+}
+
+a#tiny-lightbox-close,
+a#tiny-lightbox-slideshow {
+    float: right;
+	width: 26px;	
+	height: 26px;
+}
+a#tiny-lightbox-close {
+	background: url(../img/close.gif) no-repeat;
+}
+a#tiny-lightbox-slideshow {
+	background: url(../img/play-pause.gif)  no-repeat;
+}
+div.tiny-lightbox-slideshow-running a#tiny-lightbox-slideshow {
+	background-position: -26px 0;		
+}
+div#tiny-lightbox-description {
+    margin-bottom: 10px;
+}
+span#tiny-lightbox-stats {
+	float: left;
+	font-weight: bold;
+}
+
+
+
+/* prev and next buttons */
+
+a#tiny-lightbox-prev, a#tiny-lightbox-next {
+	position: absolute;
+	z-index: 1000;
+	width: 50%;
+	height: 100%;
+	top: 0;
+}
+a#tiny-lightbox-prev {
+	left: 0;
+}
+a#tiny-lightbox-next {
+	right: 0;
+}
+
+a#tiny-lightbox-prev span, 
+a#tiny-lightbox-next span {
+	position: absolute;
+	width: 81px;
+	height: 48px;
+	top: 40%;
+	visibility: hidden;
+}
+
+a#tiny-lightbox-prev span {
+	left: 0;
+	background: url(../img/prev.png) no-repeat;
+	filter:progid:DXImageTransform.Microsoft#AlphaImageLoader(src='../img/prev.png', sizingMethod='crop');
+	_background: none;
+}
+a#tiny-lightbox-next span {
+	right: 0;
+	background: url(../img/next.png) no-repeat;
+	filter:progid:DXImageTransform.Microsoft#AlphaImageLoader(src='../img/next.png', sizingMethod='crop');
+	_background: none;
+}
+
+a#tiny-lightbox-prev span.tiny-lightbox-hover,
+a#tiny-lightbox-next span.tiny-lightbox-hover {
+	visibility: visible;
+}
+
+/* 
+	IE6 background image flicker fix
+	http://evil#che#lu/2006/9/25/no-more-ie6-background-flicker 
+*/
+html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
