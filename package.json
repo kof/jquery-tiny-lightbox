@@ -3,7 +3,7 @@
     "description": "Lightweight lightbox clone for jQuery with different animations and slideshow mode.",
     "version": "0.1.0",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
-    "repository": "git://github.com/kof/jquery-tinyLightbox.git",
+    "repository": "git://github.com/kof/jquery-tiny-lightbox.git",
     "keywords": ["lightbox", "gallery", "animation", "slideshow", "jquery"],
     "dependencies": {
         "jquery": ">= 1.6.0"
