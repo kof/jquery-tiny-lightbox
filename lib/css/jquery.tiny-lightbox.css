@@ -125,12 +125,3 @@
 #tiny-lightbox-next span.tiny-lightbox-hover {
 	visibility: visible;
 }
-
-/*
-	IE6 background image flicker fix
-	http://evil#che#lu/2006/9/25/no-more-ie6-background-flicker
-*/
-html {
-	filter: expression(document.execCommand("BackgroundImageCache", false, true));
-}
-
