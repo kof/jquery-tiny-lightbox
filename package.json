@@ -1,5 +1,5 @@
 {
-    "name": "tiny-lightbox",
+    "name": "jquery-tiny-lightbox",
     "description": "Lightweight lightbox clone for jQuery with different animations and slideshow mode.",
     "version": "0.1.0",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
